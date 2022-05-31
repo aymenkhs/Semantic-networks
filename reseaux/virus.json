@@ -1,0 +1,51 @@
+{
+    "name":"virus",
+    "nodes":[
+        {
+            "id":0,
+            "name":"pays"
+        },
+        {
+            "id":1,
+            "name":"algerie"
+        },
+        {
+            "id":2,
+            "name":"us"
+        },
+        {
+            "id":3,
+            "name":"covid"
+        },
+        {
+            "id":4,
+            "name":"virus"
+        }
+    ],
+    "connections": [
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 1,
+            "destination" : 0
+        },
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 2,
+            "destination" : 0
+        },
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 3,
+            "destination" : 4
+        },
+        {
+            "name": "a frappe",
+            "type": "simple",
+            "source": 3,
+            "destination" : 2
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "name":"birds",
+    "nodes":[
+        {
+            "id":0,
+            "name":"bird"
+        },
+        {
+            "id":1,
+            "name":"owl"
+        },
+        {
+            "id":2,
+            "name":"ostriche"
+        },
+        {
+            "id":3,
+            "name":"eagle"
+        },
+        {
+            "id":4,
+            "name":"fly"
+        },
+        {
+            "id":5,
+            "name":"deploy_wings"
+        },
+        {
+            "id":6,
+            "name":"animal_with_wings"
+        }
+    ],
+    "connections": [
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 1,
+            "destination" : 0
+        },
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 2,
+            "destination" : 0
+        },
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 3,
+            "destination" : 0
+        },
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 4,
+            "destination" : 5
+        },
+        {
+            "name": "can",
+            "type": "simple",
+            "source": 0,
+            "destination" : 4
+        },
+        {
+            "name": "can",
+            "type": "exeption",
+            "source": 2,
+            "destination" : 4
+        },
+        {
+            "name": "is a",
+            "type": "simple",
+            "source": 0,
+            "destination" : 6
+        }
+    ]
+}
